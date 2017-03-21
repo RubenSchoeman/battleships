@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <title>Battle Ships</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="col-xs-12"><h1 class="main_heading">Battle Ships</h1></div>
+  </div>
+
+  <div class="container" id="test">
+    <div class="row">
+      <div class="border">
+        <div class="col-md-4 radarmain">
+
+          <canvas class="canvas"></canvas>
+
+          <div class="radar_a radar">
+            <table class="radar_a">
+              <tr>
+                <td class="rad_can" id="ra1" data-row="a" data-column="0"></td>
+                <td class="rad_can" id="ra2" data-row="a" data-column="1"></td>
+                <td class="rad_can" id="ra3" data-row="a" data-column="2"></td>
+                <td class="rad_can" id="ra4" data-row="a" data-column="3"></td>
+                <td class="rad_can" id="ra5" data-row="a" data-column="4"></td>
+                <td class="rad_can" id="ra6" data-row="a" data-column="5"></td>
+                <td class="rad_can" id="ra7" data-row="a" data-column="6"></td>
+                <td class="rad_can" id="ra8" data-row="a" data-column="7"></td>
+                <td class="rad_can" id="ra9" data-row="a" data-column="8"></td>
+                <td class="rad_can" id="ra10" data-row="a" data-column="9"></td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="radar_b radar">
+            <table class="radar_b">
+              <tr>
+                <td class="rad_can" id="rb1" data-row="b" data-column="0"></td>
+                <td class="rad_can" id="rb2" data-row="b" data-column="1"></td>
+                <td class="rad_can" id="rb3" data-row="b" data-column="2"></td>
+                <td class="rad_can" id="rb4" data-row="b" data-column="3"></td>
+                <td class="rad_can" id="rb5" data-row="b" data-column="4"></td>
+                <td class="rad_can" id="rb6" data-row="b" data-column="5"></td>
+                <td class="rad_can" id="rb7" data-row="b" data-column="6"></td>
+                <td class="rad_can" id="rb8" data-row="b" data-column="7"></td>
+                <td class="rad_can" id="rb9" data-row="b" data-column="8"></td>
+                <td class="rad_can" id="rb10" data-row="b" data-column="9"></td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="radar_c radar">
+            <table class="radar_c">
+              <tr>
+                <td class="rad_can" id="rc1" data-row="c" data-column="0"></td>
+                <td class="rad_can" id="rc2" data-row="c" data-column="1"></td>
+                <td class="rad_can" id="rc3" data-row="c" data-column="2"></td>
+                <td class="rad_can" id="rc4" data-row="c" data-column="3"></td>
+                <td class="rad_can" id="rc5" data-row="c" data-column="4"></td>
+                <td class="rad_can" id="rc6" data-row="c" data-column="5"></td>
+                <td class="rad_can" id="rc7" data-row="c" data-column="6"></td>
+                <td class="rad_can" id="rc8" data-row="c" data-column="7"></td>
+                <td class="rad_can" id="rc9" data-row="c" data-column="8"></td>
+                <td class="rad_can" id="rc10" data-row="c" data-column="9"></td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="radar_d radar">
+            <table class="radar_d">
+              <tr>
+                <td class="rad_can" id="rd1" data-row="d" data-column="0"></td>
+                <td class="rad_can" id="rd2" data-row="d" data-column="1"></td>
+                <td class="rad_can" id="rd3" data-row="d" data-column="2"></td>
+                <td class="rad_can" id="rd4" data-row="d" data-column="3"></td>
+                <td class="rad_can" id="rd5" data-row="d" data-column="4"></td>
+                <td class="rad_can" id="rd6" data-row="d" data-column="5"></td>
+                <td class="rad_can" id="rd7" data-row="d" data-column="6"></td>
+                <td class="rad_can" id="rd8" data-row="d" data-column="7"></td>
+                <td class="rad_can" id="rd9" data-row="d" data-column="8"></td>
+                <td class="rad_can" id="rd10" data-row="d" data-column="9"></td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="radar_e radar">
+            <table class="radar_e">
+              <tr>
+                <td class="rad_can" id="re1" data-row="e" data-column="0"></td>
+                <td class="rad_can" id="re2" data-row="e" data-column="1"></td>
+                <td class="rad_can" id="re3" data-row="e" data-column="2"></td>
+                <td class="rad_can" id="re4" data-row="e" data-column="3"></td>
+                <td class="rad_can" id="re5" data-row="e" data-column="4"></td>
+                <td class="rad_can" id="re6" data-row="e" data-column="5"></td>
+                <td class="rad_can" id="re7" data-row="e" data-column="6"></td>
+                <td class="rad_can" id="re8" data-row="e" data-column="7"></td>
+                <td class="rad_can" id="re9" data-row="e" data-column="8"></td>
+                <td class="rad_can" id="re10" data-row="e" data-column="9"></td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="radar_f radar">
+            <table class="radar_f">
+              <tr>
+                <td class="rad_can" id="rf1" data-row="f" data-column="0"></td>
+                <td class="rad_can" id="rf2" data-row="f" data-column="1"></td>
+                <td class="rad_can" id="rf3" data-row="f" data-column="2"></td>
+                <td class="rad_can" id="rf4" data-row="f" data-column="3"></td>
+                <td class="rad_can" id="rf5" data-row="f" data-column="4"></td>
+                <td class="rad_can" id="rf6" data-row="f" data-column="5"></td>
+                <td class="rad_can" id="rf7" data-row="f" data-column="6"></td>
+                <td class="rad_can" id="rf8" data-row="f" data-column="7"></td>
+                <td class="rad_can" id="rf9" data-row="f" data-column="8"></td>
+                <td class="rad_can" id="rf10" data-row="f" data-column="9"></td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="radar_g radar">
+            <table class="radar_g">
+              <tr>
+                <td class="rad_can" id="rg1" data-row="g" data-column="0"></td>
+                <td class="rad_can" id="rg2" data-row="g" data-column="1"></td>
+                <td class="rad_can" id="rg3" data-row="g" data-column="2"></td>
+                <td class="rad_can" id="rg4" data-row="g" data-column="3"></td>
+                <td class="rad_can" id="rg5" data-row="g" data-column="4"></td>
+                <td class="rad_can" id="rg6" data-row="g" data-column="5"></td>
+                <td class="rad_can" id="rg7" data-row="g" data-column="6"></td>
+                <td class="rad_can" id="rg8" data-row="g" data-column="7"></td>
+                <td class="rad_can" id="rg9" data-row="g" data-column="8"></td>
+                <td class="rad_can" id="rg10" data-row="g" data-column="9"></td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="radar_h radar">
+            <table class="radar_h">
+              <tr>
+                <td class="rad_can" id="rh1" data-row="h" data-column="0"></td>
+                <td class="rad_can" id="rh2" data-row="h" data-column="1"></td>
+                <td class="rad_can" id="rh3" data-row="h" data-column="2"></td>
+                <td class="rad_can" id="rh4" data-row="h" data-column="3"></td>
+                <td class="rad_can" id="rh5" data-row="h" data-column="4"></td>
+                <td class="rad_can" id="rh6" data-row="h" data-column="5"></td>
+                <td class="rad_can" id="rh7" data-row="h" data-column="6"></td>
+                <td class="rad_can" id="rh8" data-row="h" data-column="7"></td>
+                <td class="rad_can" id="rh9" data-row="h" data-column="8"></td>
+                <td class="rad_can" id="rh10" data-row="h" data-column="9"></td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="radar_i radar">
+            <table class="radar_i">
+              <tr>
+                <td class="rad_can" id="ri1" data-row="i" data-column="0"></td>
+                <td class="rad_can" id="ri2" data-row="i" data-column="1"></td>
+                <td class="rad_can" id="ri3" data-row="i" data-column="2"></td>
+                <td class="rad_can" id="ri4" data-row="i" data-column="3"></td>
+                <td class="rad_can" id="ri5" data-row="i" data-column="4"></td>
+                <td class="rad_can" id="ri6" data-row="i" data-column="5"></td>
+                <td class="rad_can" id="ri7" data-row="i" data-column="6"></td>
+                <td class="rad_can" id="ri8" data-row="i" data-column="7"></td>
+                <td class="rad_can" id="ri9" data-row="i" data-column="8"></td>
+                <td class="rad_can" id="ri10" data-row="i" data-column="9"></td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="radar_j radar">
+            <table class="radar_j">
+              <tr>
+                <td class="rad_can" id="rj1" data-row="j" data-column="0"></td>
+                <td class="rad_can" id="rj2" data-row="j" data-column="1"></td>
+                <td class="rad_can" id="rj3" data-row="j" data-column="2"></td>
+                <td class="rad_can" id="rj4" data-row="j" data-column="3"></td>
+                <td class="rad_can" id="rj5" data-row="j" data-column="4"></td>
+                <td class="rad_can" id="rj6" data-row="j" data-column="5"></td>
+                <td class="rad_can" id="rj7" data-row="j" data-column="6"></td>
+                <td class="rad_can" id="rj8" data-row="j" data-column="7"></td>
+                <td class="rad_can" id="rj9" data-row="j" data-column="8"></td>
+                <td class="rad_can" id="rj10" data-row="j" data-column="9"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+            <div id="fire-grid">
+
+            </div>
+            <p id="result-text">Click on Grid to Fire</p>
+        </div>
+
+        <div class="col-md-2">
+          <button class="powerup_a1 powerup radar_scan">Radar Scan</button>
+          <button class="powerup_a2 powerup">Cluster Bomb</button>
+          <button class="powerup_a3 powerup">Underwater Mine</button>
+        </div>
+        <div class="col-md-2">
+          <button class="powerup_b1 powerup">Buy</button>
+          <button class="powerup_b2 powerup">Buy</button>
+          <button class="powerup_b3 powerup">Buy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="js/ship.js"></script>
+<script src="js/fleet.js"></script>
+<script src="js/firegrid.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
